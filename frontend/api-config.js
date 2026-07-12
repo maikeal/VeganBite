@@ -1,5 +1,5 @@
 // Local backend URL. Change this after deploying your backend.
 window.API_BASE_URL = "http://localhost:5001";
 
-// Example deployed backend:
-// window.API_BASE_URL = "https://your-backend-name.onrender.com";
+// Deployed backend:
+window.API_BASE_URL = "https://veganbite-backend.onrender.com";
