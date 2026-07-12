@@ -115,6 +115,19 @@ PATCH  /api/orders/:id/status
 - When a customer updates the cart, the cart state is saved to the backend.
 - When a customer places an order, the order is saved to MongoDB and the cart is cleared.
 
+## Docker Support
+
+This project includes Docker support for the backend and MongoDB database.
+
+Docker files added:
+
+```text
+docker-compose.yml
+backend/Dockerfile
+backend/.dockerignore
+backend/.env.docker.example
+```
+
 ## Purpose
 
 This project was created to extend the restaurant website by adding a backend using Node.js, Express, and MongoDB. The backend supports core restaurant application features including menu display, cart updates, order processing, and database persistence.
@@ -124,7 +137,7 @@ This project was created to extend the restaurant website by adding a backend us
 Frontend hosted link here:
 
 ```text
-https://your-netlify-link.netlify.app
+https://veganbiite.netlify.app
 ```
 
 ## Backend API
@@ -132,7 +145,7 @@ https://your-netlify-link.netlify.app
 Deployed backend link here:
 
 ```text
-https://your-backend-link.onrender.com
+https://veganbite-backend.onrender.com
 ```
 
 ## GitHub Repository
@@ -144,6 +157,11 @@ https://github.com/maikeal/veganbite_Project-1
 ```
 ```text
 https://github.com/maikeal/veganbite_Project-2
+```
+## Video Recording Of App + MongoDB Updates 
+
+```text
+ https://canva.link/ix2h2eow5nncwtp
 ```
 
 ## Author
