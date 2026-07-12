@@ -1,0 +1,27 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: veganbite-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - veganbite_mongo_data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: veganbite-backend
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
+    environment:
+      PORT: 5001
+      MONGO_URI: mongodb://mongo:27017/veganbite
+      FRONTEND_URL: http://localhost:3000
+    depends_on:
+      - mongo
+
+volumes:
+  veganbite_mongo_data:
